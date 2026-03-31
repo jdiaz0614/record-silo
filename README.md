@@ -116,9 +116,15 @@ Create a record associated with the given device _id_ and _type_.  The file name
 
 The form-data must contain a record as follows:
 
-| Key      | Value        | Example      |
-|:---------|:-------------|:-------------|
-| record   | (file)       | image.jpg    |
+| Key      | Value        | Example      | MIME type   |
+|:---------|:-------------|:-------------|:------------|
+| record   | (file)       | image.jpg    | (See below) |
+
+Supported MIME types:
+- image/jpeg
+- image/png
+- image/gif
+- text/plain (to support programs that default to this, regardless of file type)
 
 The following Postman screenshot details a valid request:
 
