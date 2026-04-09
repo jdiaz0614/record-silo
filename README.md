@@ -116,9 +116,15 @@ Create a record associated with the given device _id_ and _type_.  The file name
 
 The form-data must contain a record as follows:
 
-| Key      | Value        | Example      |
-|:---------|:-------------|:-------------|
-| record   | (file)       | image.jpg    |
+| Key      | Value        | Example      | MIME type   |
+|:---------|:-------------|:-------------|:------------|
+| record   | (file)       | image.jpg    | (See below) |
+
+Supported MIME types:
+- image/jpeg
+- image/png
+- image/gif
+- text/plain (to support programs that default to this, regardless of file type)
 
 The following Postman screenshot details a valid request:
 
@@ -162,7 +168,7 @@ License
 
 MIT License
 
-Copyright (c) 2025 [reelyActive](https://www.reelyactive.com)
+Copyright (c) 2025-2026 [reelyActive](https://www.reelyactive.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
